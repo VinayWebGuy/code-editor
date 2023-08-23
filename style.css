@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: coral;
+  justify-content: center;
+}
+header .logo {
+  font-size: 1.3rem;
+  padding: 0 70px;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Poppins";
+}
+.logo span {
+  background-color: #fff;
+  padding: 0 12px;
+  color: coral;
+}
+main {
+  display: flex;
+}
+main > div {
+  width: 50%;
+  padding: 30px 70px;
+  overflow-y: auto;
+}
+main > div::-webkit-scrollbar {
+  width: 5px;
+}
+main > div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+main > div::-webkit-scrollbar-thumb {
+  background: darkgray;
+}
+.coding-area {
+width: 100%;
+  background-color: #111;
+  height: calc(100vh - 70px);
+  font-family: consolas !important;
+  color: #eee;
+  font-size: 0.8rem;
+  position: relative;
+}
+.coding-area > div{
+    height: 100%;
+    outline: none;
+    border: none;
+    word-break: break;
+    width: 100%;
+}
+#run{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 4px 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#run i{
+    margin-left: 4px;
+}
